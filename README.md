@@ -56,5 +56,11 @@ php artisan db:seed --class=ProductSeeder
 ###  admin_login
 ```
 https://yourdomain.com/admin/login
+```
+1.Login with your admin credentials (if not created yet, you can manually insert an admin user into the users table via phpMyAdmin or a seeder).
+
+2.Once logged in, navigate to the Products section and add some sample products.
+
+3.Go to the Coupons section and create one or more coupons for testing.
 
 
