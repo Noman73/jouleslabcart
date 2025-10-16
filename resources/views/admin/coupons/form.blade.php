@@ -47,7 +47,7 @@
 
     <!-- Maximum Discount Amount -->
     <div>
-        <label class="block text-sm font-medium mb-1">Maximum Discount Amount (optional)</label>
+        <label class="block text-sm font-medium mb-1">Maximum Discount Amount </label>
         <input type="number" step="0.01" name="maximum_discount_amount" value="{{ old('maximum_discount_amount', $coupon->maximum_discount_amount ?? '') }}"
                class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-400" />
         @error('maximum_discount_amount') <p class="text-red-500 text-sm mt-1">{{ $message }}</p> @enderror
@@ -55,7 +55,7 @@
 
     <!-- Minimum Total Price -->
     <div>
-        <label class="block text-sm font-medium mb-1">Minimum Total Price (optional)</label>
+        <label class="block text-sm font-medium mb-1">Minimum Total Price </label>
         <input type="number" step="0.01" name="minimum_total_price" value="{{ old('minimum_total_price', $coupon->minimum_total_price ?? '') }}"
                class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-400" />
         @error('minimum_total_price') <p class="text-red-500 text-sm mt-1">{{ $message }}</p> @enderror
@@ -63,7 +63,7 @@
 
     <!-- Maximum Num Of Items -->
     <div>
-        <label class="block text-sm font-medium mb-1">Maximum Number of Items (optional)</label>
+        <label class="block text-sm font-medium mb-1">Maximum Number of Items </label>
         <input type="number" name="maximum_num_of_items" value="{{ old('maximum_num_of_items', $coupon->maximum_num_of_items ?? '') }}"
                class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-400" />
         @error('maximum_num_of_items') <p class="text-red-500 text-sm mt-1">{{ $message }}</p> @enderror
@@ -71,7 +71,7 @@
 
     <!-- Minimum Num Of Items -->
     <div>
-        <label class="block text-sm font-medium mb-1">Minimum Number of Items (optional)</label>
+        <label class="block text-sm font-medium mb-1">Minimum Number of Items </label>
         <input type="number" name="minimum_num_of_items" value="{{ old('minimum_num_of_items', $coupon->minimum_num_of_items ?? '') }}"
                class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-400" />
         @error('minimum_num_of_items') <p class="text-red-500 text-sm mt-1">{{ $message }}</p> @enderror
@@ -79,7 +79,7 @@
 
     <!-- Allowed Product -->
     <div>
-        <label class="block text-sm font-medium mb-1">Allowed Product (optional)</label>
+        <label class="block text-sm font-medium mb-1">Allowed Product </label>
 
         {{-- prefer a select (pass $products => Product::pluck('name','id') from controller) --}}
         <select name="allowed_product_id"
@@ -100,7 +100,7 @@
 
     <!-- Max Uses System -->
     <div>
-        <label class="block text-sm font-medium mb-1">Max Uses (system) (optional)</label>
+        <label class="block text-sm font-medium mb-1">Max Uses (system) </label>
         <input type="number" name="max_uses_system" value="{{ old('max_uses_system', $coupon->max_uses_system ?? '') }}"
                class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-400" />
         @error('max_uses_system') <p class="text-red-500 text-sm mt-1">{{ $message }}</p> @enderror
@@ -108,7 +108,7 @@
 
     <!-- Max Uses User -->
     <div>
-        <label class="block text-sm font-medium mb-1">Max Uses (per user) (optional)</label>
+        <label class="block text-sm font-medium mb-1">Max Uses (per user) </label>
         <input type="number" name="max_uses_user" value="{{ old('max_uses_user', $coupon->max_uses_user ?? '') }}"
                class="block w-full rounded-md border border-gray-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-offset-1 focus:ring-indigo-400" />
         @error('max_uses_user') <p class="text-red-500 text-sm mt-1">{{ $message }}</p> @enderror
@@ -116,7 +116,7 @@
 
     <!-- Expiry Date -->
     <div>
-        <label class="block text-sm font-medium mb-1">Expiry Date (optional)</label>
+        <label class="block text-sm font-medium mb-1">Expiry Date </label>
         {{-- Use datetime-local to include time; convert on server if needed --}}
         <input type="datetime-local" name="expiry_date"
                value="{{ old('expiry_date', isset($coupon->expiry_date) ? $coupon->expiry_date->format('Y-m-d\TH:i') : '') }}"

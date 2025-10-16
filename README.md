@@ -23,7 +23,7 @@ Supports adding, updating, removing, and persisting cart items — without stori
 |:------|:------------------------------|
 | Backend | Laravel  12                   |
 | Frontend | Tailwind CSS                  |
-| Database | MySQL (optional for products) |
+| Database | MySQL  |
 | Storage | Laravel Session               |
 | Language | PHP 8+                        |
 | Tools | Composer, Artisan             |
