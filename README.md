@@ -47,6 +47,10 @@ DB_DATABASE=laravel_cart
 DB_USERNAME=root
 DB_PASSWORD=
 ```
+
+### database design here in this link bellow
+https://drawsql.app/teams/xyz-79/diagrams/jouleslabcart
+
 ###  product seed
 
 ```
