@@ -24,8 +24,6 @@ class CouponServices
     }
     public function applyAutoCoupon($cartDetails)
     {
-//        Session::flush();
-
         [$cart, $total, $totalItems] = $cartDetails;
 
         $coupon = Coupon::where('is_auto_applied', true)
@@ -34,7 +32,6 @@ class CouponServices
             ->where('minimum_num_of_items', '<=', $totalItems)
             ->where('maximum_num_of_items', '>=', $totalItems)
             ->first();
-//            dd($coupon);
         $discount = 0;
         $couponCode = null;
 

@@ -42,6 +42,12 @@ class CouponCodeRule implements ValidationRule
             if($coupon->minimum_num_of_items > count($this->cart)){
                 $fail("minimum  ".$coupon?->minimum_num_of_items." items allowed for this coupon");
             }
+            if($coupon->allowed_product_id){
+                $exists = collect($this->cart)->contains('id', 6);
+                if(!$exists){
+                    $fail("this coupon doesn't exist for this product");
+                }
+            }
         }
 
     }
