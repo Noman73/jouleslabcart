@@ -52,3 +52,9 @@ DB_PASSWORD=
 ```
 php artisan db:seed --class=ProductSeeder
 ```
+
+###  admin_login
+```
+https://yourdomain.com/admin/login
+
+
